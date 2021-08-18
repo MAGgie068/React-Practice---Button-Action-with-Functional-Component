@@ -4,9 +4,14 @@ import "./../styles/App.css";
 function App() {
   return (
     <div id="main">
-      // Do not alter the main div
+      <button id="click" onClick={show}>Show Me</button>
+      <p id="para">Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy</p>
     </div>
   );
+}
+
+function show(){
+  document.getElementById('para').style.visibility = "hidden";
 }
 
 
